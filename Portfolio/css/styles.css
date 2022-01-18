@@ -73,13 +73,13 @@ main {
 }
 
 .flexbox {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    /* flex-wrap: wrap; */
 }
 
 .cards {
-    width: 100px;
-    height: auto;
+    width: 300px;
+    height: 50%;
     margin: 20px;
     padding: 10px;
     float: left;
@@ -102,13 +102,14 @@ main {
 
 
 .flexbox2{
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    /* flex-wrap: wrap; */
 }
 
 .linksCentered {
     margin: auto;
     width: 50%;
+    height: 50%;
 }
 
 #textalign,
@@ -163,12 +164,37 @@ input[type="submit"]:hover {
     background-color: lightskyblue;
   }
 
-@media screen and (max-width: 768px) and (min-width: 376px) {
-    .flexbox {
+/* Phone */
+/* @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  { .flexbox {
+      display: flex;
+      flex-direction: wrap;
       flex: 50%;
-    }
+    } */
+
+/* Ipad */
+@media screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  /* and (max-width: 40em) */
+  /* and (-webkit-min-device-pixel-ratio: 1)  */
+  { .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 50%%;
+}
+
+@media screen 
+  and (max-device-width: 1200px) { 
+    .flexbox {
+        display: flex;
+        flex: row;
+}
     
-@media screen and (max-width: 375px) and (min-width: 10px) {
+/* @media screen and (max-width: 375px) and (min-width: 10px) {
     .flexbox {
          flex-direction: column;
     }
