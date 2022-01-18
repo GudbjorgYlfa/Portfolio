@@ -7,6 +7,9 @@ body, html {
     height: 100%;
 }
 
+/* h1 {
+    margin-top: -30px;
+} */
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("../img/Image1.jpg");
@@ -97,12 +100,16 @@ main {
 
 .card3 {
     background-color:steelblue;
-
 }
 
 
 .flexbox2{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 50%;
+    clear: both;
+    padding: 20px;
+    /* margin-top: -30px; */
     /* flex-wrap: wrap; */
 }
 
@@ -123,13 +130,13 @@ main {
 
 .container {
     width: 300px;
-    /* float: right; */
+    height: 100%;
     background-color: rgb(243, 243, 243);
     border-radius: 6px;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 25px;
-    margin-right: 150px;
+    /* margin-right: 150px; */
     margin-left: 40px;
 }
 
@@ -184,7 +191,7 @@ input[type="submit"]:hover {
   { .flexbox {
         display: flex;
         flex-wrap: wrap;
-        flex: 50%%;
+        flex: 50%;
 }
 
 @media screen 
